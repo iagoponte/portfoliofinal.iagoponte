@@ -17,3 +17,7 @@
     box-shadow: 0 12 15 10 #333;
     transition: all .3s ease;
 }
+
+body {
+    padding-top: 80px
+}
