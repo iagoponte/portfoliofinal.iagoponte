@@ -41,10 +41,13 @@
         </symbol>
     </svg>
     <div class="whole_page_wrap bg-dark ">
+        <!--
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">LogoIagoPonte</a>
-              <!--necessita de js para funcionar-->
+
+              <!-necessita de js para funcionar->
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -60,15 +63,41 @@
                     <a class="nav-link" href="#">Galeria</a>
                   </li>
                 </ul>
-                <!--
+
+                <!-
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                -->
+                ->
+
               </div>
             </div>
           </nav>
+        -->
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-3 border-bottom">
+                
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Sobre Mim</a></li>
+                <li><a href="#" class="nav-link px-2 link-secondary">Portfólio</a></li>
+                <li><a href="#" class="nav-link px-2 link-secondary"">Galeria</a></li>
+                <li><a href="#" class="nav-link px-2 link-secondary"">Contatos</a></li>
+                <li><a href="#" class="nav-link px-2 link-secondary"">Deixe seu Contato</a></li>
+            </ul>
+            <!--
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+            </div>
+            -->
+        </header>
+        
         <!--
            <div class="top_section_navigation_container px-3 py-2 text-bg-dark border-top">
             <header class="top_navigation_all">
@@ -107,12 +136,20 @@
             </header>
         </div>     
         -->
-        <div class="b-exemple-divider"></div>
-        <main id="content" role="main">
-            <div class="pagina_homepage text-light">
+        
+        <main id="content" role="main" class="container">
+            <div class="pagina_homepage text-light row">
                 <!--adicionar um css aqui para afastar, dar padding, margin top, em relação à navbar fixa no topo-->
-                <h1 class="text-center ">Curriculum Vitae Iago Ponte<hr></h1>
-                <div class="secoes">
+                <!--Coluna da imagem-->
+                <!--Talvez precise controlar o tamanho da linha, verificar-->
+                <div class="col-sm">
+                    <h1 class="text-center">Portfólio</h1>
+                    <h3 class="text-center border-bottom"><i>Iago Ponte</i></h3>
+                    <img src="/imagens/IMG_18091660034468460.jpg" class="img-fluid rounded float start" alt="Foto Perfil Iago Ponte">
+                </div>
+                <!--Coluna do Conteúdo da página-->
+                <div class="col-lg">
+                    
                     <div class="container">
                         <section id="introd">
                             <h3>Introdução: Sobre mim</h3>
