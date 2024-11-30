@@ -1,1 +1,171 @@
 <!--Em torno de 10 imagens que ilustrem seus interesses pessoais e profisisonais, amigos, trabalhos, pets, etc.-->
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+<!-- a rel deve sempre ser nomeada como "stylesheet" pois é uma convenção da www3, se for nomeado de outra forma não vai ser lido pelos navegadores (lidando com um doc CSS, a relação é sempre essa de estilo e nomeada dessa forma)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="/estilo/style.css" rel="stylesheet" crossorigin="anonymous">
+
+    <title>Página IagoPonte</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-theme="dark">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="github" viewBox="0 0 16 16">
+            <title>GitHub</title>
+                <path fill-rule="" clip-rule="" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+        </symbol>
+
+        <symbol id="email" viewBox="0 0 16 16">
+            <title>E-mail</title>
+                <path fill-rule="" clip-rule="" d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"></path>
+                <path fill-rule="" clip-rule="" d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"></path>
+        </symbol>
+               
+        <symbol id="linkedin" viewBox="0 0 16 16">
+            <title>LinkedIn</title>
+                <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                </path>
+        </symbol>
+    
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <title>Instagram</title>
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+        </symbol>
+        
+        <symbol id="whatsapp" viewBox="0 0 16 16">
+            <title>WhatsApp</title>
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+        </symbol>
+
+        <symbol id="whatsapp" viewBox="0 0 16 16">
+            <title>WhatsApp</title>
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+        </symbol>
+
+        <symbol id="logoiago" viewBox="0 0 210 297">
+            <title>Início</title>
+                <path style="display:inline;fill:#ffffff;stroke:#ffffff;stroke-width:1.7203;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+                d="m 160.44068,294.5972 c -3.05824,-2.17029 -3.26386,-7.81455 -4.09165,-112.30818 C 155.48919,73.747541 155.42802,72.201703 151.80879,67.489179 145.04271,58.679295 137.90123,55.962494 122.36765,56.289163 82.980214,57.117388 46.567385,73.452891 29.280075,98.049956 20.054224,111.17691 16.401048,123.58329 16.262855,142.25689 c -0.148545,20.06031 3.858322,34.68163 14.083738,51.39383 7.709659,12.60046 23.903707,27.87916 36.603305,34.53427 10.305063,5.39996 32.768205,11.38696 42.726042,11.38696 9.08555,0 13.55223,2.54351 13.55223,7.71744 0,7.09537 -6.68139,8.33434 -27.019678,5.00959 C 59.001436,246.21912 29.941191,225.83258 13.649391,194.38255 -5.9383184,156.56987 -2.8342312,111.66858 21.348284,83.016503 34.155909,67.8417 57.697209,53.966424 83.134468,46.599732 95.034207,43.153543 100.86815,42.740528 148.0867,42.001933 c 45.94716,-0.718752 52.37439,-0.495704 56.21836,1.949176 2.38723,1.518795 4.34011,3.450479 4.34011,4.293643 0,3.201303 -5.26396,6.424286 -12.26845,7.511814 -10.17529,1.579356 -16.94966,5.365162 -20.92306,11.692118 -3.28081,5.22399 -3.4035,9.28756 -3.40906,113.422326 -0.005,66.69603 -0.65486,109.17999 -1.70155,111.07856 -2.38128,4.31979 -6.13253,5.3225 -9.90237,2.64763 z"></path>
+                <path style="fill:#ffffff;stroke:#ffffff;stroke-width:1.68765;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+                d="m 155.97354,22.083932 c -7.05398,-4.632312 -6.70186,-12.1761817 0.81479,-17.4564904 7.25788,-5.09858105 9.9749,-5.01434958 16.59746,0.514483 6.65211,5.5535994 6.95413,11.2695894 0.86407,16.3539324 -5.53182,4.61825 -11.83066,4.82091 -18.27632,0.588075 z"></path>
+        </symbol>
+
+        <symbol id="sendemail" viewBox="0 0 16 16">
+            <title>Send Email</title>
+                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"></path>
+        </symbol>
+    </svg>
+    
+
+    <div class="whole_page_wrap bg-dark" style="box-sizing: border-box;">
+        <div class="row text-center justify-content-center">
+            <div class="col-md-4">
+                <h2 class="text-light p-2">
+                    Galeria de Fotos
+                    <hr class="my-2">
+                </h2>
+            </div>
+        </div>
+        
+        
+
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-3 border-bottom fixed-top">      
+            <div class="col-md-3 mb-3 mb-md-0">
+                <a href="#" class="d-inline-flex link-body-emphasis text-decoration-none ps-3">
+                    <svg class="bi d-block  mb-1" width="18px" height="24px">
+                        <use xlink:href="#logoiago"></use>
+                    </svg>
+                    <i class="ps-2">Iago Ponte</i>
+                </a>
+            </div>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/sobremim.html" class="nav-link px-2 link-secondary">Sobre Mim</a></li>
+                <li><a href="/cv.html" class="nav-link px-2 link-secondary">CV</a></li>
+                <li><a href="/galeria.html" class="nav-link px-2 link-secondary">Galeria</a></li>
+                <li><a href="/entreemcontato.html" class="nav-link px-2 link-secondary">Entre em Contato</a></li>
+                <li><a href="/depoimentos.html" class="nav-link px-2 link-secondary">Depoimentos</a></li>
+                <li><a href="/estudos.html" class="nav-link px-2 link-secondary">Estudos</a></li>
+            </ul>
+        </header>
+       
+        <main id="content" role="main" class="container">
+            <hr class="my-2">
+            <div class="pagina_homepage text-light container bg-body-tertiary p-2 my-2 rounded">
+                <div class="container text-center">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/20211120_172705.jpg" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Viajem Guaramiranga-CE</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/20221109_144527.jpg" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Atendimento Consultório</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/_MG_7102.jpg" class="img-thumbnail rounded float start" alt="">
+                             Surf 🤟🏼
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/c5c3012f-d66a-4b98-ad73-7db1082889f0.jpg" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Ministrando Oficina</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/IMG_3034.JPEG" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Melhor prato do mês nov.24</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/IMG_0959.JPG" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Guts/gatts (melhor mangá)</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/IMG_1134.JPG" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Chapéu de Palha</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/IMG_2530.JPEG" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Cena de Dorama</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/IMG_2863.JPEG" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Fim de aula</spam>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="">
+                             <img src="/imagens/Galeria/IMG_2915.JPEG" class="img-thumbnail rounded float start" alt="">
+                             <spam class="text-light">Pizza Italiana 😋</spam>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </main>
+
+        <footer class="d-flex flex-wrap justify-content-center py-0 my-0 border-top bg-dark-subtle">
+            <a href="#top"><i class="text-secondary text-small text-center">Autoria: Iago Ponte</i></a>
+        </footer>
+       
+</body>
+</html>
